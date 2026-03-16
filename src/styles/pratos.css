@@ -1,0 +1,226 @@
+.container-pratos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+    gap: 1em;
+}
+
+.prato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: #FDFFE1 0px 0px 10px 0px;
+    border-radius: 16px;
+    
+    padding: 1em;
+    width: 692px;
+    margin-bottom: 1.5em;
+
+    position: relative;
+    border: 1px solid #ffffff;
+}
+
+
+.prato:hover {
+    border-color: #fff;
+    box-shadow: #ffffff 0px 0px 10px 4px;
+    /* border: 1px solid #ffffff; */
+    transition: 0.3s;
+}
+
+.prato .image-div{
+    border-radius: 10px;
+
+    width: 97px;
+    height: 93px;
+    background-color: red;
+    
+}
+
+.prato img{
+    border-radius: 10px;
+
+    width: 97px;
+    height: 93px;
+    object-fit: cover;
+}
+
+.prato .descricao{
+    width: 445px;
+}
+
+.prato p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_prato{
+    text-align: center;
+    box-shadow: #FDFFE1 0px 0px 10px 0px;
+    border-radius: 16px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 32px;
+    
+    padding: 0.5em;
+    width: 80%;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+}
+
+.add_prato_mesa{
+    text-align: center;
+    box-shadow: #00FF00 0px 0px 10px 0px;
+    border-radius: 16px;
+    font-size: 32px;
+    
+    padding: 0.5em;
+    width: 80%;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+}
+
+.add_prato_mesa:hover {
+    box-shadow: #00FF00 0px 0px 15px 4px;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+}
+
+
+
+/* Pencil Prato Editar */
+.pencil-preview-prato{
+    border: 1px solid #68a7fd;
+    box-shadow: 0 0 10px #3074e9;
+
+    /* background: transparent; */
+    background-color: black;
+    padding: 1em;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+
+    position: absolute;
+    top: 75%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 40px;
+
+}
+.pencil-preview-prato img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 18px; */
+    height: auto;
+    filter: drop-shadow(0 0 2px #3074e9);
+    width: 21px;
+    height: 20px;
+    /* object-fit: contain ; */
+}
+
+
+/*============================FROM mesaAddPrato==================================*/
+
+/* Remove as setinhas (spinners) no Chrome, Safari, Edge e Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove as setinhas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+/* Ajuste específico para quando for Textarea */
+.input-neon.text-area-custom {
+    /* Impede o usuário de esticar a caixa e quebrar o layout */
+    resize: none; 
+    /* Espaçamento entre as linhas do texto */
+    line-height: 1.4;
+    
+}
+
+.quantidade-preview-prato{
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    /* box-shadow: 0 0 8px rgba(255,255,255,0.5); */
+    
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    color: white;
+    transition: 0.3s;
+    position: absolute;
+    top: 100%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* display: none; */
+}
+.quantidade-preview-prato p{
+    font-size: 15px;
+}
+
+.input-neon-pedidos-prato {
+    background: transparent;
+    border-radius: 16px;
+    /* padding: 0.5em; */
+    color: white;
+    outline: none;
+    transition: 0.4s;
+    text-align: center;
+}
+.input-neon-pedidos-prato:focus {
+    border-color: #fff;
+    /* box-shadow: 0 0 8px rgba(255,255,255,0.5); */
+    box-shadow: 0 0 10px #ffffff;
+    
+}
+.input-neon-pedidos-prato.full-width {
+    width: 100%;
+    /* margin-bottom: 2rem; */
+}
+.input-neon-pedidos-prato.small {
+    width: 40px;
+}
+
+
+
+@media (max-width: 415px) {
+
+}
+@media (min-width: 416px) and (max-width: 600px) {
+
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+    
+}
+@media (min-width: 1000px) and (max-width: 1150px) {
+
+}
+@media (min-width: 1151px) and (max-width: 1540px) {
+    
+}
+@media (min-width: 1540px) {
+
+}

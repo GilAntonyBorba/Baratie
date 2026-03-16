@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddPratos</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/mesa.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="src/img/BaratieImagens/mesaBanner.png" alt="MesasBanner">
+    </div>
+
+    <div class="container-info-mesa">
+        <div class="container-mesa">
+            <div class="mesa">
+                <p>Mesa 1</p>
+                <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+            </div>
+             <form id="form-add-prato" action="">
+                
+                <div class="div-info-mesa">
+                    <label for="nome_cliente">Nome_Cliente</label>
+                    <input type="text" id="nome_cliente" class="input-neon full-width" placeholder="Digite o Nome do Cliente" value="Arthur Viena">
+                </div>
+                <div class="div-info-mesa">
+                    <label for="nome_atendente">Atendente</label>
+                    <input type="text" id="nome_atendente" class="input-neon full-width" placeholder="Digite o Nome do Atendente" value="Maria Valentina">
+                </div>
+                <div class="div-info-mesa">
+                    <label for="#">Total</label>
+                    <p>R$ 400.00</p>
+                </div>
+                <!-- <div class="div-categoria-prato">
+                    <label for="total">Total</label>
+                    <input type="text" id="total" class="input-neon full-width" placeholder="R$ 400.00" value="400.00">
+                </div> -->
+                <div class="action-buttons">
+                    <button type="button" id="btn-limpar" class="btn-neon red">Cancelar Edição</button>
+                    <button type="button" id="btn-preview" class="btn-neon green">Salvar Edição</button>
+                </div>
+            </form>
+            
+
+        </div>
+        <div class="container-mesa-direito">
+            <img src="src/img/mesaImagens/ButtonRealizarPagamento.png" alt="Button-Img-Realizar-Pagamento">
+            <img src="src/img/mesaImagens/ButtonAdicionarPrato.png" alt="Button-Img-Adicionar-Prato" class="adicionar_prato">
+            <!-- <button type="button" id="btn-realizar-pagamento" class="btn-neon-pagination green1">
+                Salvar Edição
+                img
+            </button>
+            <button type="button" id="btn-adicionar-praato" class="btn-neon-pagination green2">Salvar Edição</button> -->
+        </div>
+    </div>
+
+    
+    
+
+
+    <div class="container-pratos-pedido">
+
+        <div class="title-center">
+            <p>Pratos da Mesa 1</p>
+        </div>
+
+        <div class="pedidos-pratos">
+
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Soma_Prato: R$40.00</p>
+                </div>
+
+                <div class="id_prato-preview-prato">
+                    <p>Id_Prato: 4</p>
+                </div>
+
+                <div class="quantidade-preview-prato">
+                    <p>Quantidade: </p>
+                    <input type="number" id="quant-preview-prato" class="input-neon-pedidos-prato small" placeholder="Ex: 2" value="2">
+                </div>
+
+                 <div class="data-pedido-preview-prato">
+                    <p>Data do Pedido: 2024-12-11 14:35:21.123</p>
+                </div>
+
+                <div class="obs-preview-prato">
+                    <p>Obs: </p>
+                    <input type="text" id="observacao-preview-prato" class="input-neon-obs-pedidos-prato small" placeholder="Ex: Retirar Cebola" value="Retirar Cebola">
+                </div>
+                
+            </div>
+
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Soma_Prato: R$40.00</p>
+                </div>
+
+                <div class="id_prato-preview-prato">
+                    <p>Id_Prato: 4</p>
+                </div>
+
+                <div class="quantidade-preview-prato">
+                    <p>Quantidade: </p>
+                    <input type="number" id="quant-preview-prato" class="input-neon-pedidos-prato small" placeholder="Ex: 2" value="2">
+                </div>
+
+                 <div class="data-pedido-preview-prato">
+                    <p>Data do Pedido: 2024-12-11 14:35:21.123</p>
+                </div>
+
+                <div class="obs-preview-prato">
+                    <p>Obs: </p>
+                    <input type="text" id="observacao-preview-prato" class="input-neon-obs-pedidos-prato small" placeholder="Ex: Retirar Cebola" value="Retirar Cebola">
+                </div>
+                
+            </div>
+
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Soma_Prato: R$40.00</p>
+                </div>
+
+                <div class="id_prato-preview-prato">
+                    <p>Id_Prato: 4</p>
+                </div>
+
+                <div class="quantidade-preview-prato">
+                    <p>Quantidade: </p>
+                    <input type="number" id="quant-preview-prato" class="input-neon-pedidos-prato small" placeholder="Ex: 2" value="2">
+                </div>
+
+                 <div class="data-pedido-preview-prato">
+                    <p>Data do Pedido: 2024-12-11 14:35:21.123</p>
+                </div>
+
+                <div class="obs-preview-prato">
+                    <p>Obs: </p>
+                    <input type="text" id="observacao-preview-prato" class="input-neon-obs-pedidos-prato small" placeholder="Ex: Retirar Cebola" value="Retirar Cebola">
+                </div>
+                
+            </div>
+
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Soma_Prato: R$40.00</p>
+                </div>
+
+                <div class="id_prato-preview-prato">
+                    <p>Id_Prato: 4</p>
+                </div>
+
+                <div class="quantidade-preview-prato">
+                    <p>Quantidade: </p>
+                    <input type="number" id="quant-preview-prato" class="input-neon-pedidos-prato small" placeholder="Ex: 2" value="2">
+                </div>
+
+                 <div class="data-pedido-preview-prato">
+                    <p>Data do Pedido: 2024-12-11 14:35:21.123</p>
+                </div>
+
+                <div class="obs-preview-prato">
+                    <p>Obs: </p>
+                    <input type="text" id="observacao-preview-prato" class="input-neon-obs-pedidos-prato small" placeholder="Ex: Retirar Cebola" value="Retirar Cebola">
+                </div>
+                
+            </div>
+
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Soma_Prato: R$40.00</p>
+                </div>
+
+                <div class="id_prato-preview-prato">
+                    <p>Id_Prato: 4</p>
+                </div>
+
+                <div class="quantidade-preview-prato">
+                    <p>Quantidade: </p>
+                    <input type="number" id="quant-preview-prato" class="input-neon-pedidos-prato small" placeholder="Ex: 2" value="2">
+                </div>
+
+                 <div class="data-pedido-preview-prato">
+                    <p>Data do Pedido: 2024-12-11 14:35:21.123</p>
+                </div>
+
+                <div class="obs-preview-prato">
+                    <p>Obs: </p>
+                    <input type="text" id="observacao-preview-prato" class="input-neon-obs-pedidos-prato small" placeholder="Ex: Retirar Cebola" value="Retirar Cebola">
+                </div>
+                
+            </div>
+
+
+
+
+            
+           
+
+        </div>
+        
+        <div class="add_prato">
+            <p>Salvar Edição</p>
+        </div>
+    </div>
+
+
+    <script>
+        const adicionar_prato = document.querySelector('.adicionar_prato');
+
+        adicionar_prato.addEventListener('click', () => {
+            window.location.href = `mesaAddPrato.html`;
+        });
+
+    </script>
+
+</body>
+</html>

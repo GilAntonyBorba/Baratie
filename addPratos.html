@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddPratos</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/addPratos.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="src/img/BaratieImagens/addPratosBanner.png" alt="MesasBanner">
+    </div>
+    <div class="container-add-pratos">
+        <div class="first-column-add-pratos">
+            <form id="form-add-prato" action="">
+                <div class="div-inputs">
+                    <div class="upload-box">
+                        <label for="img-input">
+                            <img class="icon-upload" src="src/img/icons/cloud-upload.png" alt="Upload">
+                        </label>
+                        <input type="file" id="img-input" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="div-nome-prato">
+                        <textarea id="nome-prato" class="input-neon text-area-custom" placeholder="Nome do prato"></textarea>
+                    </div>
+                     <div class="div-preco-prato">
+                        <input type="number" id="preco-prato" class="input-neon small" placeholder="R$ 00.00">
+                    </div>
+                </div>
+                <div class="div-categoria-prato">
+                    <input type="text" id="categoria-prato" class="input-neon full-width" placeholder="Categoria:">
+                </div>
+                <div class="action-buttons">
+                    <button type="button" id="btn-limpar" class="btn-neon red">Limpar</button>
+                    <button type="button" id="btn-preview" class="btn-neon green">Adicionar ao Preview</button>
+                </div>
+            </form>
+        </div>
+        <div class="second-column-add-pratos">
+            <p class="title-second-column">Preview</p>
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Categoria: </p>
+                </div>
+            </div>
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <!-- <p>Excluir</p> -->
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+
+                <div class="categoria-preview-prato">
+                    <p>Categoria: </p>
+                </div>
+            </div>
+            <div class="prato">
+                <div class="image-div">
+                    <img src="src/img/pratos/ImagemRealPrato.png" alt="">
+                </div>
+                <p class="descricao">Paella (arroz com frutas do mar de primeira qualidade ao estilo europeu) acompanha salada com amêndoas e molho do mostarda da casa. Serve 4 pessoas</p>
+                <p>R$ 200,00</p>
+                
+                <div class="trash-preview-prato">
+                    <img src="src/img/icons/trash.png" alt="IconExcluirPreviewPrato">
+                </div>
+                
+                <div class="categoria-preview-prato">
+                    <p>Categoria: </p>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="add_prato">
+            <p>Adicionar Pratos</p>
+        </div>
+    </div>
+
+</body>
+</html>

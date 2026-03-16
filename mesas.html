@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesas</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/mesas.css">
+</head>
+
+<body>
+    
+    <div class="banner">
+        <img src="src/img/BaratieImagens/MesasBanner.png" alt="MesasBanner">
+    </div>
+    <div class="container-mesas">
+        <div class="mesa">
+            <p>Mesa 1</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 2</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 3</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 4</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 5</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 6</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 7</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 8</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 9</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+        <div class="mesa">
+            <p>Mesa 10</p>
+            <img src="src/img/BaratieImagens/mesaOcupada.png" alt="">
+        </div>
+
+        
+
+    </div>
+
+
+    <script>
+        const mesas = document.querySelectorAll('.mesa');
+
+        mesas.forEach((mesa, index) => {
+            mesa.addEventListener('click', () => {
+                window.location.href = `mesa.html`;
+            });
+        });
+    </script>
+</body>
+</html>
